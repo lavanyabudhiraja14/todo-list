@@ -45,12 +45,12 @@ document.addEventListener("DOMContentLoaded",()=>{
             popSound.currentTime = 0;
             popSound.play();
 
-            li.classList.add("pop");   // 👈 trigger animation
+            li.classList.add("pop");  
 
             setTimeout(() => {
              tasks = tasks.filter(t => t.id !== task.id);
              saveTasks();
-            li.remove();             // 👈 remove AFTER animation
+            li.remove();             
              }, 350); 
         })
 
